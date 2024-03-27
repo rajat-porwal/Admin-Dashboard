@@ -6,7 +6,7 @@
 
 .container{
     display: grid;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 5fr;
     background-color: rgb(226, 230, 180);
@@ -39,16 +39,32 @@
 }
 
 .header{
+    background-color: whitesmoke;
     padding-top: 16px;
-    grid-template-columns: 3fr 1fr;
+    /* padding-left: 8%; */
+    grid-template-columns: 2fr 1fr;
     height: 150px;
     display: grid;
     /* padding-right: 40px; */
 }
 
+.searchbar{
+    align-self: center;
+    padding-left: 15%;
+}
+
+.searchbar input{
+    background-color: lightgray;
+    border-radius: 8px;
+    width: 70%;
+    height: 24px;
+}
+
 .about-user{
     align-self: center;  
     justify-self: center;
+    
+   
 }
 
 .about-user p{
@@ -56,6 +72,7 @@
 }
 
 .about-user img{
+    margin: 0 15px;
     width: 33px;
     height: auto;
     border-radius: 50%;
@@ -71,6 +88,7 @@
 }
 
 .about-user + div{
+    padding-left: 15%;
     align-self: center;
 }
 
@@ -80,8 +98,16 @@
 }
 
 .header >:last-child{
-    justify-self: center;
+    /* justify-self: center; */
     align-self: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header > :last-child button{
+    margin-left: 20px;
+    width: 70px;
+    border-radius: 10px;
 }
 
 .content{
