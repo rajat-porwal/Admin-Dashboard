@@ -12,31 +12,40 @@
     grid-template-rows: 150px 1fr;
 }
 
-.sidebar{
+.sidebar {
     padding-top: 16px;
     padding-left: 20px;
     grid-column: 1;
-    grid-row: 1 /-1;
-    display: grid;
-    row-gap: 10px;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center; 
     background-color: aqua;
+    font-size: 18px; 
+    height: 100%; 
 }
 
 .sidebar > :first-child {
-    padding-bottom: 40px;
+    padding-bottom: 20px; 
+    font-size: 20px; 
+    text-align: center; 
 }
 
 .sidebar svg,
 .header svg,
-.about-user svg{
+.about-user svg {
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
+    width: 24px; 
+    height: 24px; 
 }
 
-.sidebar .settings{
-    margin-top: 40px;
+.sidebar .settings {
+    margin-top: 20px; 
 }
+
 
 .header{
     background-color: whitesmoke;
